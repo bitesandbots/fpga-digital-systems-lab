@@ -18,8 +18,11 @@ jobs:
           sudo apt-get install -y iverilog
           iverilog -V | head -1
 
+      # Invoked via `bash` on purpose: this repo is authored on Windows, where
+      # core.filemode=false means a local `chmod +x` is never recorded in git.
+      # Calling bash explicitly makes CI independent of the executable bit.
       - name: List testbenches
-        run: scripts/test-all.sh --list
+        run: bash scripts/test-all.sh --list
 
       - name: Run all testbenches
-        run: scripts/test-all.sh
+        run: bash scripts/test-all.sh
