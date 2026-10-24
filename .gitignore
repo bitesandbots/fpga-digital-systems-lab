@@ -1,1 +1,37 @@
+# --- Simulation build output ---
+sim/
+*.vvp
+*.vcd
+*.out
+*.fst
+
+# --- Vivado ---
+*.jou
+*.str
+vivado*.log
+.Xil/
+vivado_project/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/
+.jobs/
+
+# --- Python ---
+__pycache__/
+*.pyc
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+
+# --- Local planning files (not part of the portfolio) ---
 AB_FPGA_First_Project_Roadmap_GitHub (1).xlsx
+docs/WEEKLY_ROADMAP.md
+
+# Scratch awaiting manual deletion
+_to_delete/
