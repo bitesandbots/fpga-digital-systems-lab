@@ -19,7 +19,7 @@ jobs:
           iverilog -V | head -1
 
       - name: List testbenches
-        run: make list
+        run: scripts/test-all.sh --list
 
       - name: Run all testbenches
-        run: make test
+        run: scripts/test-all.sh
