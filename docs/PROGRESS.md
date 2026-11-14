@@ -18,7 +18,7 @@ Claude: read this first each session, before `docs/WEEKLY_ROADMAP.md`.
 | Wk | Theme | Gate | Status | Commit | Notes |
 |---|---|---|---|---|---|
 | 0 | Environment setup | G0 | ✅ **DONE** | `be4b080` | CI green on run #3 |
-| 1 | Setup + first HDL | G1a | 🟡 **tests pass locally** | — | awaiting push + CI green + evidence |
+| 1 | Setup + first HDL | G1a | 🟡 **pushed** | `40797a8` | awaiting CI green + evidence + notes |
 | 2 | Combinational logic | G1 | ⬜ | — | **order the Basys 3 this week** |
 | 3 | Sequential logic | — | ⬜ | — | **start the Vivado download this week** |
 | 4 | First FPGA hardware | G2 | ⬜ | — | needs board + Vivado |
@@ -62,7 +62,9 @@ Digilent, plus cable `310-053`, $6) so it arrives before Week 4.
 ### Week 1 — Setup + first HDL 🟡 IN PROGRESS
 
 **Simulation passes: `PASS: tb_gates (14 checks)`, 1 passed / 0 failed, first run.**
-Gate G1a not yet fully met — still needs push, CI green, and evidence capture.
+Committed and pushed as `41b420c` (gates), `646e7e8` (testbench), `40797a8` (gitignore
++ progress). Gate G1a not yet fully met — still needs CI green, evidence capture,
+and the student's own notes.
 
 **Delivered:** `rtl/gates/gate_and.v`, `gate_or.v`, `gate_xor.v`, `gate_not.v`
 (Verilog-2005, continuous `assign`, each wrapped in `` `default_nettype none ``),
