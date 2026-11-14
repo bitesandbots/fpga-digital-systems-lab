@@ -30,7 +30,7 @@ Thumbs.db
 *.swp
 
 # --- Local planning files (not part of the portfolio) ---
-AB_FPGA_First_Project_Roadmap_GitHub (1).xlsx
+*.xlsx
 docs/WEEKLY_ROADMAP.md
 
 # Scratch awaiting manual deletion
